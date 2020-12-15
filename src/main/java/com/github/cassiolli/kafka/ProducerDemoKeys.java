@@ -11,9 +11,9 @@ import java.util.concurrent.ExecutionException;
 public class ProducerDemoKeys {
     public static void main(String[] args) throws ExecutionException, InterruptedException {
         // creates a logger for my class
+
         Logger logger = LoggerFactory.getLogger(ProducerDemoKeys.class);
         final String  kafkaServer = "127.0.0.1:9092";
-
         // create producer properties
         Properties properties = new Properties();
         properties.setProperty(
